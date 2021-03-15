@@ -12,4 +12,13 @@ Also, all dynamic programming problems satisfy the overlapping subproblems prope
 
 Once, we observe these properties in a given problem, be sure that it can be solved using DP.
 
+# How to approach a DP problem
+We can approach a dynamic Programming problem in two ways:
+1. Bottom Up  (a.k.a. Tabulation Method)
+      Tabulation is the method that avoids recursion. In this approach, we solve the sub-problems first. This is typically done by filling up an n-dimensional table. Based on         the results in the table, the solution to the original problem is then computed.
+
+3. Top Down   (a.k.a Memoization Method)
+      In this approach, we try to solve the bigger problem by recursively finding the solution to smaller sub-problems. Whenever we solve a sub-problem, we cache its result so       that we don’t need to solve that again in future (if required). Instead, we can just return the saved result. This technique of storing the results of already                   solved subproblems is called Memoization.
+
+
 Hereby including some of the standard problems of dynamic programming.
