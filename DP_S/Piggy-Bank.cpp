@@ -27,20 +27,6 @@ long long MOD=1e9+7;
 #define pi 3.1415926536
 #define pii pair<int, int>
 #define vii vector<pi>
-const int MAXN = (int)((1e5) + 100);
-
-//
-int gcd(int a, int b) { if (a == 0) return b; return gcd(b % a, a);}
-int max(int a, int b) {if (a > b) return a; else return b;}
-int min(int a, int b) {if (a < b) return a; else return b;}
-void prl(int x) {cout << x << endl;}
-// typedef tree<pii, null_type, less<pii>, rb_tree_tag, tree_order_statistics_node_update> Set;
-//bool isPrime(int N){ for(int i=2;i*i<=N;++i){if(N%i==0) return false;}return true;}
-int cbrt(int x) { int lo = 1, hi = min(2000000ll, x); while (hi - lo > 1) {int mid = (lo + hi) / 2; if (mid * mid * mid < x) {lo = mid;} else hi = mid;} if (hi * hi * hi <= x) return hi; else return lo;}
-const int dx[4] = { -1, 1, 0, 0};
-const int dy[4] = {0, 0, -1, 1};
-int XX[] = { -1, -1, -1, 0, 0, 1, 1, 1 };
-int YY[] = { -1, 0, 1, -1, 1, -1, 0, 1 };
 
 ll e,maxw;
 ll cache[10000+10];
@@ -86,7 +72,7 @@ void cook_here()
     if(res==INT_MAX)
         cout<<"This is impossible.\n";
     else
-        cout<<"The minimum amount of money in the piggy-bank is "<<res<<endl;
+        cout<<"The minimum amount of money in the piggy-bank is "<<res<<'.'<<endl;
 
 
 
